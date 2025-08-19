@@ -23,8 +23,8 @@
 <body>
   <!-- start hero-section -->
   <header class="bg-[#F8EDE3]  ">
-    <nav class="lg:mb-24 mb-16">
-      <div class="container bg-orange  flex justify-between">
+    <nav class="lg:mb-24 mb-16 md:mb-26 relative">
+      <div class="container bg-orange   flex justify-between">
         <a href="">
           <img src="./images/logosvg.svg" alt="">
         </a>
@@ -39,24 +39,35 @@
           <a class="navlist lg:hidden text-2xl text-[#1E1E1E] font-normal">
             <i class="fa-solid fa-list"></i>
           </a>
-          <div class="nav-action hidden lg:flex  lg:gap-6">
+          <a class="navclose lg:hidden hidden text-[#1E1E1E] font-normal ">
+            <i class="fa-solid text-3xl fa-xmark"></i>
+          </a>
+          <div class="nav-action lg:hidden hidden lg:flex  lg:gap-6">
             <button
               class="lg:py-2 lg:px-9  rounded-full border-[3px] border-[#36556C] text-[#36556C] font-bold .text-base">Login</button>
             <button
               class="lg:py-3 lg:px-9  rounded-full border-[3px]  bg-[#36556C] text-white font-bold .text-base">Getstarted</button>
           </div>
+          <ul class="dropdown hidden  text-center bg-[#36556C] right-0 left-0 absolute top-[90px]">
+            <li class="py-4 border-b-[1px] "><a href="" class="text-white text-lg text-center font-normal">Home</a>
+            </li>
+            <li class="py-4 border-b-[1px] "><a href="" class="text-white text-lg font-normal">About</a></li>
+            <li class="py-4 border-b-[1px] "><a href="" class="text-white text-lg font-normal">Product <i
+                  class="fa-solid fa-chevron-down"></i></a></li>
+            <li class="py-4 "><a href="" class="text-white text-lg font-normal">Contact</a></li>
+          </ul>
         </div>
       </div>
     </nav>
     <section class="header-info">
       <div class="container">
         <h1
-          class="lg:text-[56px] text-[30px] text-[#1E1E1E] lg:w-2/5 w-4/5 m-auto text-center lg:font-semibold  font-black mb-4 tracking-tighter">
+          class="lg:text-[56px] text-[30px] md:mb-2 text-[#1E1E1E] lg:w-2/5 w-4/5 m-auto text-center lg:font-semibold  font-black  tracking-tighter">
           Flowers That
           Speak
           Your Emotions
         </h1>
-        <p class="text-[#898989] m-auto lg:w-2/5 w3/4 mb-10 text-center lg:text-lg text-md">Discover beautifully crafted
+        <p class="text-[#898989] m-auto lg:w-2/5 w3/4 mb-24 text-center lg:text-lg text-md">Discover beautifully crafted
           arrangements made
           with
           love and
@@ -178,6 +189,7 @@
       </p>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
